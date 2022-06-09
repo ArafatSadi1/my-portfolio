@@ -1,0 +1,20 @@
+[
+    {
+      "_id": "62a21b646029c82ef8efc881",
+      "picture": "https://i.ibb.co/xsQ4srD/parts-Store.png",
+      "name": "Parts Store",
+      "about": "Users can buy products. But before the order user has to log in (if the user has an account) / sign up (if the user hasn't an account) / google sign in. User sees their order in the dashboard. If a user wants user can pay through a card or delete their order. An Admin can add a new product, delete a product, delete a user, delete an order (if not pain yet), and shipped the paid order."
+    },
+    {
+      "_id": "62a21b6491d6019962a72525",
+      "picture": "https://i.ibb.co/72DY6CJ/jerins-Parlor.png",
+      "name": "Jerins Parlour",
+      "about": "This website have three different role viewer, user and admin. Log in user can book a service. On the Book route, a user can see their booked service. When a user books a service user gets a booking confirmation mail. And after the paid user gets a payment confirmation mail."
+    },
+    {
+      "_id": "62a21b644db6503417e0665b",
+      "picture": "https://i.ibb.co/RCjLRyt/bicycle-Warehouse.png",
+      "name": "Bicycle Warehouse",
+      "about": "Developed this project to manage users product stock perfectly. A loged in user can add a new product, delete a product And update their product quantity. Implemented Authentication using firebase. Used JSON web token for secure API And user information."
+    }
+  ]
