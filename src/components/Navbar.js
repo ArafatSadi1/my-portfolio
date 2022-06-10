@@ -13,16 +13,21 @@ const Navbar = () => {
       <li>
         <Link to="/contact">Contact</Link>
       </li>
+      <li>
+        <Link to="/blogs">Blogs</Link>
+      </li>
     </>
   );
   return (
     <div class="navbar bg-blue-50 px-10 sticky top-0 z-50">
       <div class="navbar-start">
-        <Link to="/" class="normal-case text-2xl font-semibold">
-          Yasin Arafat
-        </Link>
       </div>
-      <div class="navbar-end">
+      <div class="navbar-center">
+        <div className="hidden lg:flex">
+          <ul class="menu menu-horizontal p-0">{navbarItems}</ul>
+        </div>
+      </div>
+      <div className="navbar-end">
         <div class="dropdown dropdown-end">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg
@@ -46,9 +51,6 @@ const Navbar = () => {
           >
             {navbarItems}
           </ul>
-        </div>
-        <div className="hidden lg:flex">
-          <ul class="menu menu-horizontal p-0">{navbarItems}</ul>
         </div>
       </div>
     </div>

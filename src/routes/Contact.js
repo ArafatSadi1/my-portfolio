@@ -26,8 +26,8 @@ export const Contact = () => {
   };
 
   return (
-    <div className="py-8">
-        <h2 className="text-5xl font-bold text-center py-8">Contact</h2>
+    <div className="py-8 bg-blue-50">
+        <h2 className="text-5xl font-bold text-center py-8">Contact me</h2>
       <form className="flex flex-col max-w-sm mx-auto" ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input

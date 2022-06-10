@@ -1,20 +1,41 @@
 [
-    {
-      "_id": "62a21b646029c82ef8efc881",
-      "picture": "https://i.ibb.co/xsQ4srD/parts-Store.png",
-      "name": "Parts Store",
-      "about": "Users can buy products. But before the order user has to log in (if the user has an account) / sign up (if the user hasn't an account) / google sign in. User sees their order in the dashboard. If a user wants user can pay through a card or delete their order. An Admin can add a new product, delete a product, delete a user, delete an order (if not pain yet), and shipped the paid order."
-    },
-    {
-      "_id": "62a21b6491d6019962a72525",
-      "picture": "https://i.ibb.co/72DY6CJ/jerins-Parlor.png",
-      "name": "Jerins Parlour",
-      "about": "This website have three different role viewer, user and admin. Log in user can book a service. On the Book route, a user can see their booked service. When a user books a service user gets a booking confirmation mail. And after the paid user gets a payment confirmation mail."
-    },
-    {
-      "_id": "62a21b644db6503417e0665b",
-      "picture": "https://i.ibb.co/RCjLRyt/bicycle-Warehouse.png",
-      "name": "Bicycle Warehouse",
-      "about": "Developed this project to manage users product stock perfectly. A loged in user can add a new product, delete a product And update their product quantity. Implemented Authentication using firebase. Used JSON web token for secure API And user information."
-    }
-  ]
+  {
+    "picture": "https://i.ibb.co/xsQ4srD/parts-Store.png",
+    "screenshot1": "https://i.ibb.co/g7YBKLB/screencapture-parts-store-76f8e-web-app-2022-06-10-22-13-25.png",
+    "screenshot2": "https://i.ibb.co/R7K8C4L/screencapture-parts-store-76f8e-web-app-dashboard-manage-All-Orders-2022-06-10-22-14-26.png",
+    "screenshot3": "https://i.ibb.co/Hd04m5L/screencapture-parts-store-76f8e-web-app-dashboard-my-Profile-2022-06-10-22-15-48.png",
+    "liveLink": "https://parts-store-76f8e.web.app/",
+    "githubClient": "https://github.com/ArafatSadi1/parts-store-client",
+    "githubServer": "https://github.com/ArafatSadi1/parts-store-server",
+    "name": "Parts Store",
+    "projectFor": "an automotive parts selling website",
+    "technology": "ReactJs, React Router Dom, React Hook Forms, TailwindCSS, daisyUI, stripe, firebase, expressjs, mongoDB.",
+    "about": "Users can buy products. But before the order user has to log in (if the user has an account) / sign up (if the user hasn't an account) / google sign in. User sees their order in the dashboard. If a user wants user can pay through a card or delete their order. An Admin can add a new product, delete a product, delete a user, delete an order (if not pain yet), and shipped the paid order."
+  },
+  {
+    "picture": "https://i.ibb.co/72DY6CJ/jerins-Parlor.png",
+    "screenshot1": "https://i.ibb.co/T14wQHY/screencapture-jerins-parlour-f168c-web-app-2022-06-10-22-07-51.png",
+    "screenshot2": "https://i.ibb.co/HdqSG7X/screencapture-jerins-parlour-f168c-web-app-dashboard-order-List-2022-06-10-22-09-14.png",
+    "screenshot3": "https://i.ibb.co/nBmMWP5/screencapture-jerins-parlour-f168c-web-app-book-booking-List-2022-06-10-22-08-48.png",
+    "liveLink": "https://jerins-parlour-f168c.web.app/",
+    "githubClient": "https://github.com/ArafatSadi1/jerins-parlour-client",
+    "githubServer": "https://github.com/ArafatSadi1/jerins-parlour-server",
+    "name": "Jerins Parlour",
+    "projectFor": "a service selling website",
+    "technology": "ReactJs, React Router Dom, React Hook Form, expressjs,mongoDB, TailwindCSS, daisyUI, stripe, sendgrid.",
+    "about": "This website have three different role viewer, user and admin. Log in user can book a service. On the Book route, a user can see their booked service. When a user books a service user gets a booking confirmation mail. And after the paid user gets a payment confirmation mail."
+  },
+  {
+    "picture": "https://i.ibb.co/RCjLRyt/bicycle-Warehouse.png",
+    "screenshot1": "https://i.ibb.co/7GHT3YR/home.png",
+    "screenshot2": "https://i.ibb.co/c38SGzq/manage-Product.png",
+    "screenshot3": "https://i.ibb.co/8NxgLxB/login-Signup.png",
+    "liveLink": "https://bicycle-warehouse-d6a15.web.app/",
+    "githubClient": "https://github.com/ArafatSadi1/bicycle-warehouse-client",
+    "githubServer": "https://github.com/ArafatSadi1/bicycle-warehouse-server",
+    "name": "Bicycle Warehouse",
+    "projectFor": "a product management website",
+    "technology": "ReactJs, React Router Dom, React Hook Form, Bootstrap, ReactBootstrap, stripe, expressjs, mongoDB.",
+    "about": "Developed this project to manage users product stock perfectly. A loged in user can add a new product, delete a product And update their product quantity. Implemented Authentication using firebase. Used JSON web token for secure API And user information."
+  }
+]
