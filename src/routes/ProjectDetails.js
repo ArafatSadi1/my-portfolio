@@ -69,7 +69,7 @@ const ProjectDetails = () => {
           <span className="font-bold">Technology Used:</span>{" "}
           {product.technology}
         </h3>
-        <div className="flex flex-row gap-4 justify-center mt-8">
+        <div className="flex flex-col lg:flex-row gap-4 justify-center mt-8">
           <button
             onClick={() => handleLiveWebsite(product.liveLink)}
             class="btn btn-outline btn-primary"
