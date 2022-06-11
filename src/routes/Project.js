@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Project = ({ project }) => {
     const {_id, picture, name, about} = project;
   return (
-    <div class="card card-compact w-96 bg-base-100 shadow-xl lg:mb-0 mb-8">
+    <div class="card card-compact w-88 lg:w-96 bg-base-100 shadow-xl lg:m-0 m-8">
       <figure>
         <img
           src={picture}

@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import myImage from "../images/myImage.jpg";
+import myImage from "../images/my-img.png";
 import Contact from "./Contact";
 import Projects from "./Projects";
-import Skills from "./Skills";
-  
+
 const Home = () => {
   const handleResume = () => {
     const url =
@@ -12,37 +10,38 @@ const Home = () => {
     window.open(url, "_blank");
   };
   return (
-    <>
-      <div class="hero min-h-screen">
+    <div>
+      <div class="hero min-h-screen lg:px-12 px-0">
         <div class="hero-content flex-col lg:flex-row-reverse">
-          {/* <img
-            src={myImage}
-            alt="myimage"
-            class="max-w-sm h-96 rounded-lg shadow-2xl"
-          /> */}
-          <div className="flex flex-col gap-4">
-            <h1 class="text-4xl font-semibold">Hi,</h1>
-            <h1 class="text-4xl font-semibold">I'm Yasin Arafat</h1>
-            <h1 class="text-4xl font-semibold">JR. Web Developer</h1>
-            {/* <p class="py-6">
+          <div class="avatar">
+            <div class="w-88 lg:w-96 mask mask-squircle">
+              <img
+                src={myImage}
+                alt="myimage"
+                class="w-full h-96 rounded-lg shadow-2xl"
+              />
+            </div>
+          </div>
+          <div className="lg:w-3/5 w-full lg:mr-32 mr-0">
+            <h1 class="text-4xl font-semibold">Hey,</h1>
+            <h1 class="text-4xl font-semibold my-2">I'm Yasin Arafat</h1>
+            <h1 class="text-4xl font-semibold">JR. React Developer</h1>
+            <p class="py-6">
               I am a MERN stack developer with experience building websites. I
               specialize in JavaScript. I also have experience working with
               ReactJs, ExpressJs, and MongoDB. I seek a workplace where I can
               test and continuously grow my skills.
-            </p> */}
+            </p>
             <button onClick={handleResume} class="btn btn-primary">
               Download Resume
             </button>
-            <Link to="/contact" class="btn btn-outline btn-secondary">
-              Contact
-            </Link>
+            <button class="btn btn-outline btn-secondary ml-3">Contact</button>
           </div>
         </div>
       </div>
       <Projects></Projects>
-      <Skills></Skills>
       <Contact></Contact>
-    </>
+    </div>
   );
 };
 

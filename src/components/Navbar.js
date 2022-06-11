@@ -1,7 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const [path, setPath] = useState(false);
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setPath(true);
+    }
+    else{
+      setPath(false)
+    }
+  }, [location.pathname]);
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   const navbarItems = (
     <>
       <li>
@@ -19,9 +38,16 @@ const Navbar = () => {
     </>
   );
   return (
-    <div class="navbar bg-blue-50 px-10 sticky top-0 z-50">
-      <div class="navbar-start">
-      </div>
+    <div
+      className={
+        path
+          ? colorChange
+            ? "navbar bg-blue-50 px-10 sticky top-0 z-50"
+            : "navbar px-10 sticky top-0 z-50"
+          : "navbar bg-blue-50 px-10 sticky top-0 z-50"
+      }
+    >
+      <div class="navbar-start"></div>
       <div class="navbar-center">
         <div className="hidden lg:flex">
           <ul class="menu menu-horizontal p-0">{navbarItems}</ul>

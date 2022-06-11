@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div className="py-8 bg-blue-50">
       <h2 className="text-center text-5xl mb-12 font-bold">My Projects</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-3 pl-12 lg:pl-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 pl-0 lg:pl-8">
         {allProjects.map((project) => (
           <Project key={project._id} project={project}></Project>
         ))}
