@@ -30,7 +30,7 @@ export const Contact = () => {
     <div className="pt-8 bg-base-100">
       <h2 className="text-5xl font-bold text-center py-8">Contact me</h2>
       <div
-      className="py-8 p-4 lg:p-0"
+      className="py-8 px-4 lg:px-0"
         style={{
           backgroundImage: `url(${wave})`,
           backgroundPosition: "center",

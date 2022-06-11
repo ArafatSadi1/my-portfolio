@@ -5,7 +5,7 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/project/${id}`)
+    fetch(`https://radiant-wave-28103.herokuapp.com/project/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
