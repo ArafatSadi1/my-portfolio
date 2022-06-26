@@ -5,38 +5,69 @@ import js from "../../src/images/skills/java-script.png";
 import reactJs from "../../src/images/skills/physics.png";
 import expressJs from "../../src/images/skills/express.png";
 import mongoDB from "../../src/images/skills/mongoDB.png";
+import { AiOutlineLine } from "react-icons/ai";
 
 const Skills = () => {
   return (
-    <div className="pb-8 w-full bg-blue-50">
-      <h2 className="text-left text-5xl ml-8 py-12 font-serif">Skills</h2>
+    <div className="pb-16 w-full bg-blue-50">
+      <p className="font-serif pt-16 ml-2 flex items-center uppercase">
+        <span>
+          <AiOutlineLine />
+        </span>
+        Checkout out my
+      </p>
+      <h2 className="text-left text-4xl ml-8 pb-12 font-serif uppercase">Skills</h2>
       <div className="w-full lg:w-3/5 mx-auto">
         <div class="stats stats-vertical lg:stats-horizontal shadow">
           <div class="stat">
-            <div class="stat-title font-semibold text-lg text-center mb-2">HTML</div>
-            <div class="stat-value"><img src={html} alt="" style={{width: 120, height: 90}} /></div>
+            <div class="stat-title font-semibold text-lg text-center mb-2">
+              HTML
+            </div>
+            <div class="stat-value">
+              <img src={html} alt="" style={{ width: 120, height: 90 }} />
+            </div>
           </div>
 
           <div class="stat">
-            <div class="stat-title font-semibold text-lg text-center mb-2">CSS</div>
-            <div class="stat-value"><img src={css} alt="" style={{width: 120, height: 90}} /></div>
+            <div class="stat-title font-semibold text-lg text-center mb-2">
+              CSS
+            </div>
+            <div class="stat-value">
+              <img src={css} alt="" style={{ width: 120, height: 90 }} />
+            </div>
           </div>
 
           <div class="stat">
-            <div class="stat-title font-semibold text-lg text-center mb-2">JavaScript</div>
-            <div class="stat-value"><img src={js} alt="" style={{width: 120, height: 90}} /></div>
+            <div class="stat-title font-semibold text-lg text-center mb-2">
+              JavaScript
+            </div>
+            <div class="stat-value">
+              <img src={js} alt="" style={{ width: 120, height: 90 }} />
+            </div>
           </div>
           <div class="stat">
-            <div class="stat-title font-semibold text-lg text-center mb-2">Reactjs</div>
-            <div class="stat-value"><img src={reactJs} alt="" style={{width: 120, height: 90}} /></div>
+            <div class="stat-title font-semibold text-lg text-center mb-2">
+              Reactjs
+            </div>
+            <div class="stat-value">
+              <img src={reactJs} alt="" style={{ width: 120, height: 90 }} />
+            </div>
           </div>
           <div class="stat">
-            <div class="stat-title font-semibold text-lg text-center mb-2">Expressjs</div>
-            <div class="stat-value"><img src={expressJs} alt="" style={{width: 120, height: 90}} /></div>
+            <div class="stat-title font-semibold text-lg text-center mb-2">
+              Expressjs
+            </div>
+            <div class="stat-value">
+              <img src={expressJs} alt="" style={{ width: 120, height: 90 }} />
+            </div>
           </div>
           <div class="stat">
-            <div class="stat-title font-semibold text-lg text-center mb-2">MongoDB</div>
-            <div class="stat-value"><img src={mongoDB} alt="" style={{width: 120, height: 90}} /></div>
+            <div class="stat-title font-semibold text-lg text-center mb-2">
+              MongoDB
+            </div>
+            <div class="stat-value">
+              <img src={mongoDB} alt="" style={{ width: 120, height: 90 }} />
+            </div>
           </div>
         </div>
       </div>
