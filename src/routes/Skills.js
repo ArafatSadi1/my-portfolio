@@ -8,8 +8,8 @@ import mongoDB from "../../src/images/skills/mongoDB.png";
 
 const Skills = () => {
   return (
-    <div className="my-8">
-      <h2 className="text-5xl font-bold text-center mb-8">Skills</h2>
+    <div className="pb-8 w-full bg-blue-50">
+      <h2 className="text-left text-5xl ml-8 py-12 font-serif">Skills</h2>
       <div className="w-full lg:w-3/5 mx-auto">
         <div class="stats stats-vertical lg:stats-horizontal shadow">
           <div class="stat">

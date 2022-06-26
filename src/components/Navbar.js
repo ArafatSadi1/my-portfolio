@@ -30,6 +30,9 @@ const Navbar = () => {
         <Link to="/projects">Projects</Link>
       </li>
       <li>
+        <Link to="/about">About</Link>
+      </li>
+      <li>
         <Link to="/contact">Contact</Link>
       </li>
       <li>
@@ -50,7 +53,7 @@ const Navbar = () => {
       <div class="navbar-start"></div>
       <div class="navbar-center">
         <div className="hidden lg:flex">
-          <ul class="menu menu-horizontal p-0">{navbarItems}</ul>
+          <ul class="menu menu-horizontal p-0 text-lg">{navbarItems}</ul>
         </div>
       </div>
       <div className="navbar-end">
@@ -73,7 +76,7 @@ const Navbar = () => {
           </label>
           <ul
             tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-zinc-100 rounded-box w-52"
           >
             {navbarItems}
           </ul>

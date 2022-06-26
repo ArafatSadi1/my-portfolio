@@ -1,7 +1,9 @@
 import React from "react";
 import myImage from "../images/my-img.png";
+import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 const Home = () => {
   const handleResume = () => {
@@ -11,35 +13,25 @@ const Home = () => {
   };
   return (
     <div>
-      <div class="hero min-h-screen lg:px-12 px-0">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <div class="avatar">
-            <div class="w-88 lg:w-96 mask mask-squircle">
-              <img
-                src={myImage}
-                alt="myimage"
-                class="w-full h-96 rounded-lg shadow-2xl"
-              />
-            </div>
-          </div>
-          <div className="lg:w-3/5 w-full lg:mr-32 mr-0">
-            <h1 class="text-4xl font-semibold">Hey,</h1>
-            <h1 class="text-4xl font-semibold my-2">I'm Yasin Arafat</h1>
-            <h1 class="text-4xl font-semibold">JR. React Developer</h1>
-            <p class="py-6">
-              I am a MERN stack developer with experience building websites. I
-              specialize in JavaScript. I also have experience working with
-              ReactJs, ExpressJs, and MongoDB. I seek a workplace where I can
-              test and continuously grow my skills.
-            </p>
-            <button onClick={handleResume} class="btn btn-primary">
-              Download Resume
-            </button>
-            <button class="btn btn-outline btn-secondary ml-3">Contact</button>
-          </div>
+      <div className="flex justify-center items-center h-screen">
+        <div className="text-center">
+          <h1 className="text-4xl">Hello,</h1>
+          <h1 className="text-4xl mt-2">
+            I'm <span className="text-blue-600 font-serif">Yasin Arafat</span>
+          </h1>
+          <p className="w-3/6 mx-auto my-3 text-lg">
+            A multidisciplinary developer and designer (sometimes) with a
+            passion for creating engaging, entertaining user experiences.
+          </p>
+          <button onClick={handleResume} class="btn btn-primary">
+          Download Resume
+        </button>
+        <button class="btn btn-outline btn-secondary ml-3">Contact</button>
         </div>
       </div>
       <Projects></Projects>
+      <About></About>
+      <Skills></Skills>
       <Contact></Contact>
     </div>
   );

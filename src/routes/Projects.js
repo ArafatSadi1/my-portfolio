@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Project from "./Project";
+import { AiOutlineLine } from "react-icons/ai"
 
 const Projects = () => {
   const [allProjects, setAllProjects] = useState([]);
@@ -9,8 +10,9 @@ const Projects = () => {
       .then((data) => setAllProjects(data));
   }, []);
   return (
-    <div className="py-8 bg-blue-50">
-      <h2 className="text-center text-5xl mb-12 font-bold">My Projects</h2>
+    <div className="pb-8 bg-blue-50">
+      <p className="font-serif pt-16 ml-2 text-lg flex items-center"><span><AiOutlineLine/></span>Take a look at my</p>
+      <h2 className="text-left text-5xl ml-8 pb-16 font-serif">Projects</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 pl-0 lg:pl-8">
         {allProjects.map((project) => (
           <Project key={project._id} project={project}></Project>

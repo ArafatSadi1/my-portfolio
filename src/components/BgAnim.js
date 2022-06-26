@@ -38,7 +38,7 @@ const BgAnim = () => {
                 }
             },
             "opacity": {
-                "value": 0.5,
+                "value": 0.1,
                 "random": {
                     "enable": true,
                     "minimumValue": 0.3
@@ -51,15 +51,15 @@ const BgAnim = () => {
                 }
             },
             "size": {
-                "value": 160,
+                "value": 60,
                 "random": {
                     "enable": true,
                     "minimumValue": 100
                 },
                 "anim": {
                     "enable": false,
-                    "speed": 5,
-                    "size_min": 40,
+                    "speed": 4,
+                    "size_min": 60,
                     "sync": false
                 }
             },
@@ -72,7 +72,7 @@ const BgAnim = () => {
             },
             "move": {
                 "enable": true,
-                "speed": 8,
+                "speed": 1,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -100,14 +100,14 @@ const BgAnim = () => {
                 "grab": {
                     "distance": 400,
                     "line_linked": {
-                        "opacity": 1
+                        "opacity": .1
                     }
                 },
                 "bubble": {
                     "distance": 400,
                     "duration": 2,
-                    "size": 40,
-                    "opacity": 0.8,
+                    "size": 20,
+                    "opacity": 0.1,
                     "speed": 3,
                     "color": "#057aff"
                 },

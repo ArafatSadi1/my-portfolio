@@ -27,8 +27,8 @@ export const Contact = () => {
   };
 
   return (
-    <div className="pt-8 bg-base-100">
-      <h2 className="text-5xl font-bold text-center py-8">Contact me</h2>
+    <div className="pt-8 bg-zinc-100">
+      <h2 className="text-left text-5xl ml-8 py-12 font-serif">Contact me</h2>
       <div
       className="py-8 px-4 lg:px-0"
         style={{
