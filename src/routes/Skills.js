@@ -9,7 +9,7 @@ import { AiOutlineLine } from "react-icons/ai";
 
 const Skills = () => {
   return (
-    <div className="pb-16 w-full bg-blue-50">
+    <div className="w-full bg-blue-50">
       <p className="font-serif pt-16 ml-2 flex items-center uppercase">
         <span>
           <AiOutlineLine />
@@ -17,7 +17,7 @@ const Skills = () => {
         Checkout out my
       </p>
       <h2 className="text-left text-4xl ml-8 pb-12 font-serif uppercase">Skills</h2>
-      <div className="w-full lg:w-3/5 mx-auto">
+      <div className="w-1/2 mx-auto pb-16 lg:w-3/5">
         <div class="stats stats-vertical lg:stats-horizontal shadow">
           <div class="stat">
             <div class="stat-title font-semibold text-lg text-center mb-2">

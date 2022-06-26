@@ -24,10 +24,10 @@ const Home = () => {
             A multidisciplinary developer and designer (sometimes) with a
             passion for creating engaging, entertaining user experiences.
           </p>
-          <button onClick={handleResume} class="btn btn-primary">
+          <button onClick={handleResume} class="btn btn-primary rounded-tr-none rounded-bl-none">
           Download Resume
         </button>
-        <button class="btn btn-outline btn-secondary ml-3">Contact</button>
+        <button class="btn btn-outline btn-secondary ml-3 rounded-tr-none rounded-bl-none">Contact</button>
         </div>
       </div>
       <Projects></Projects>

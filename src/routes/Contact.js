@@ -41,7 +41,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="bg-zinc-100 h-screen">
+    <div className="bg-zinc-100 h-full lg:h-screen">
       <p className="font-serif pt-16 ml-2 flex items-center uppercase">
         <span>
           <AiOutlineLine />
@@ -51,31 +51,31 @@ export const Contact = () => {
       <h2 className="text-left text-4xl ml-8 pb-12 font-serif uppercase">
         Contact
       </h2>
-      <div className="flex items-center justify-center gap-8 px-12">
-        <div className="w-2/5">
+      <div className="flex lg:flex-row flex-col items-center justify-center gap-8 px-4 lg:px-12">
+        <div className="w-full lg:w-2/5">
           <p>
             If you ever want to grab a coffee (virtually) or just want a quick
             chat - you can find me on social media or you can send me a message
             here!
           </p>
           <div className="flex items-center justify-evenly my-6">
-            <button className="text-3xl text-blue-600" onClick={handleLinkedIn}>
+            <button className="text-3xl text-blue-600 hover:text-blue-700" onClick={handleLinkedIn}>
               <FaLinkedin />
             </button>
-            <button className="text-3xl text-blue-600" onClick={handleFb}>
+            <button className="text-3xl text-blue-600 hover:text-blue-700" onClick={handleFb}>
               <FaFacebookSquare />
             </button>
-            <button className="text-3xl text-blue-600" onClick={handleGithub}>
+            <button className="text-3xl text-blue-600 hover:text-blue-700" onClick={handleGithub}>
               <FaGithubSquare />
             </button>
           </div>
           <p>
             You can also email me directly at
-            <a href="mailto:arafatsadi1@gmail.com">arafatsadi1@gmail.com</a>
+            <a href="mailto:arafatsadi1@gmail.com" className="underline hover:underline-offset-4 ml-2">arafatsadi1@gmail.com</a>
           </p>
         </div>
         <form
-          className="flex flex-col gap-3 w-1/2 mx-auto"
+          className="flex flex-col gap-3 w-full lg:w-1/2 mx-auto py-8 lg:py-0"
           ref={form}
           onSubmit={sendEmail}
         >
@@ -99,7 +99,7 @@ export const Contact = () => {
           <input
             type="submit"
             value="Send message"
-            className="btn btn-primary w-32"
+            className="btn btn-primary w-32 rounded-tr-none rounded-bl-none"
           />
         </form>
       </div>
