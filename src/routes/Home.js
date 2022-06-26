@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import myImage from "../images/my-img.png";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
@@ -27,7 +27,7 @@ const Home = () => {
           <button onClick={handleResume} class="btn btn-primary rounded-tr-none rounded-bl-none">
           Download Resume
         </button>
-        <button class="btn btn-outline btn-secondary ml-3 rounded-tr-none rounded-bl-none">Contact</button>
+        <Link to="/contact" className="btn btn-outline btn-secondary ml-3 rounded-tr-none rounded-bl-none">Contact</Link>
         </div>
       </div>
       <Projects></Projects>
