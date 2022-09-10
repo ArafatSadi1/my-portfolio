@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import ".././App.css"
 
 const Navbar = () => {
   const location = useLocation();
@@ -7,9 +8,8 @@ const Navbar = () => {
   useEffect(() => {
     if (location.pathname === "/") {
       setPath(true);
-    }
-    else{
-      setPath(false)
+    } else {
+      setPath(false);
     }
   }, [location.pathname]);
   const [colorChange, setColorchange] = useState(false);
@@ -23,21 +23,66 @@ const Navbar = () => {
   window.addEventListener("scroll", changeNavbarColor);
   const navbarItems = (
     <>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/projects">Projects</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
-      <li>
-        <Link to="/blogs">Blogs</Link>
-      </li>
+      <span>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-secondary lg:border-b-[2px] lg:border-b-secondary navDesign"
+              : "nevEffect lg:after:bg-secondary"
+          }
+          to="/"
+        >
+          Home
+        </NavLink>
+      </span>
+      <span>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-secondary lg:border-b-[2px] lg:border-b-secondary navDesign"
+              : "nevEffect lg:after:bg-secondary"
+          }
+          to="/projects"
+        >
+          Projects
+        </NavLink>
+      </span>
+      <span>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-secondary lg:border-b-[2px] lg:border-b-secondary navDesign"
+              : "nevEffect lg:after:bg-secondary"
+          }
+          to="/about"
+        >
+          About
+        </NavLink>
+      </span>
+      <span>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-secondary lg:border-b-[2px] lg:border-b-secondary navDesign"
+              : "nevEffect lg:after:bg-secondary"
+          }
+          to="/contact"
+        >
+          Contact
+        </NavLink>
+      </span>
+      <span>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-secondary lg:border-b-[2px] lg:border-b-secondary navDesign"
+              : "nevEffect lg:after:bg-secondary"
+          }
+          to="/blogs"
+        >
+          Blogs
+        </NavLink>
+      </span>
     </>
   );
   return (
