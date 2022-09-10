@@ -11,7 +11,7 @@ import Projects from "./routes/Projects";
 
 function App() {
   return (
-    <div>
+    <div className="max-w-[1300px] mx-auto">
       <BgAnim></BgAnim>
       <Navbar></Navbar>
       <Routes>

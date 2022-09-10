@@ -45,9 +45,9 @@ const Navbar = () => {
       className={
         path
           ? colorChange
-            ? "navbar bg-blue-50 px-10 sticky top-0 z-50"
+            ? "navbar bg-blue-50 px-10 sticky top-0 z-50 shadow"
             : "navbar px-10 sticky top-0 z-50"
-          : "navbar bg-blue-50 px-10 sticky top-0 z-50"
+          : "navbar bg-blue-50 px-10 sticky top-0 z-50 shadow"
       }
     >
       <div class="navbar-start"></div>
