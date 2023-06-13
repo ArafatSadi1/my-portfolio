@@ -9,7 +9,7 @@ import Skills from "./Skills";
 const Home = () => {
   const handleResume = () => {
     const url =
-      "https://drive.google.com/file/d/13hcen4FwCtF8KNv3Qh6Y6THaPH5iOvDR/view?usp=sharing";
+      "https://drive.google.com/file/d/1_7NL2U22fEhkRi6uGcpZw3NRfUOrOgI7/view?usp=sharing";
     window.open(url, "_blank");
   };
   return (
