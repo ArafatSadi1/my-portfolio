@@ -5,15 +5,15 @@ import { AiOutlineLine } from "react-icons/ai";
 
 export const Contact = () => {
   const handleLinkedIn = () => {
-    const url = "https://www.linkedin.com/in/yasin-arafat-370b5b219/";
+    const url = "https://www.linkedin.com/in/yasinarafat483/";
     window.open(url, "_blank");
   };
   const handleFb = () => {
-    const url = "https://www.linkedin.com/in/yasin-arafat-370b5b219/";
+    const url = "https://www.facebook.com/Arafat48/";
     window.open(url, "_blank");
   };
   const handleGithub = () => {
-    const url = "https://www.linkedin.com/in/yasin-arafat-370b5b219/";
+    const url = "https://github.com/ArafatSadi1/";
     window.open(url, "_blank");
   };
 
