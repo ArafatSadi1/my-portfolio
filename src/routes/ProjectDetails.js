@@ -5,7 +5,7 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   useEffect(() => {
-    fetch(`https://radiant-wave-28103.herokuapp.com/project/${id}`)
+    fetch(`https://portfolio-server-2bzp.onrender.com/project/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
